@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.img_container {
+  background-image: url(../backgroundIMG.png);
+
+  width: 100%;
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  background-color: #07b594;
+}
+.section {
+  width: 60%;
+  min-height: calc(50% + 50px);
+  background-color: #fff;
+  border-radius: 10px;
+}
+h3,
+h4 {
+  text-align: center;
+  margin: 6%;
+  font-size: 30px;
+  font-weight: bold;
+  color: slategrey;
+}
+h4 {
+  font-size: 16px;
+}
+.login_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  width: 80%;
+}
+.name_input,
+.email_input {
+  margin: 40px 0;
+  border: 2px solid #ff9852;
+  border-radius: 8px;
+  padding: 0 5px;
+  max-width: 300px;
+}
+i {
+  color: #ff9852;
+}
+input,
+#submit_btn {
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 90%;
+}
+#submit_btn {
+  width: 80px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: #ff9852;
+  border: 2px solid #fff;
+  color: #fff;
+}
+#submit_btn:hover {
+  background-color: #fff;
+  color: #ff9852;
+  border: 2px solid #ff9852;
+  transition: all 0.5s ease;
+}
+#error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error {
+  color: red;
+}
