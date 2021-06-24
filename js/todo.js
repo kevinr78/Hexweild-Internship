@@ -8,7 +8,7 @@ const SEARCH_QUERY = document.getElementById("search_input");
 const urlParams = new URLSearchParams(window.location.search);
 const username = urlParams.get("username");
 
-/* Setting Date and Greting user */
+/* Setting Date and Greeting user */
 document.getElementById(
   "greeting"
 ).innerHTML = `<span>Welcome,</span> <br /> <h3>${username}</h3>`;
@@ -47,6 +47,12 @@ ADD_TASK_BTN.addEventListener("click", (e) => {
   } else {
     /* Push to array */
     TASK_LIST.push(newTask);
+  }
+
+  if (TASK_LIST.length === 0) {
+    document.getElementById("table_text").style.display = "block";
+  } else {
+    document.getElementById("table_text").style.display = "none";
   }
 
   /* Creating new task element */
