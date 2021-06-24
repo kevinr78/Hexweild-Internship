@@ -120,8 +120,15 @@ tr {
 .task_text {
   width: 50%;
 }
+#table_text {
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.2;
+  text-align: center;
+  margin-top: 20px;
+}
 .modal {
-  display: none; 
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
