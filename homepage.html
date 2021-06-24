@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TODO List</title>
-    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/homepage.css" />
     <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <script
-    src="https://kit.fontawesome.com/0000f17b81.js"
-    crossorigin="anonymous"
-  ></script>
-  
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/0000f17b81.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <section>
-         <!-- Modal to add new task -->
-        <div id="task_input_modal" class="modal">
+      <!-- Modal to add new task -->
+      <div id="task_input_modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <h1>What's the Task ?</h1>
+          <span class="close">&times;</span>
+          <input type="text" name="task_name" id="task_name" />
 
-            <!-- Modal content -->
-            <div class="modal-content">
-                <h1> What's the Task ?</h1>  <span class="close">&times;</span>
-                <input type="text" name="task_name" id="task_name">
-               
-                <button type="button" id="add_task_btn">Add Task</button>
-            </div>
-          
-          </div>
-        <div class="container">
-            <!-- Header -->
-           <header>
-            <div id="greeting">
-                
-            </div>
-               <div class="date_time_container">
-                   <h2 id="day"> </h2>
-                    <p id="date"> </p>
-               </div>
-             
-           </header>
-           <!-- Button to add new task -->
-            <div class="add_task_btn">
-                <hr>
-                <button type="button" id="new_task_btn"> 
-                    <i class="fas fa-plus "></i>
-                </button>
-            </div>
-            <!-- New tasks container -->
-            <div class="task_list">
-                <!-- New tasks get appended here -->
-                <table id="task_list_table">
-                   
-                </table>
-            </div>
-            <!-- Search to filter out results -->
-            <div class="search_list">
-                <input type="text" class="search_input" id="search_input" placeholder="Start typing to filter results"/>
-              
-            </div>
+          <button type="button" id="add_task_btn">Add Task</button>
         </div>
+      </div>
+      <div class="container">
+        <!-- Header -->
+        <header>
+          <div id="greeting"></div>
+          <div class="date_time_container">
+            <h2 id="day"></h2>
+            <p id="date"></p>
+          </div>
+        </header>
+        <!-- Button to add new task -->
+        <div class="add_task_btn">
+          <hr />
+          <button type="button" id="new_task_btn">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+        <!-- New tasks container -->
+        <div class="task_list">
+          <!-- New tasks get appended here -->
+          <table id="task_list_table">
+            <h2 id="table_text">No To-Do Items</h2>
+          </table>
+        </div>
+        <!-- Search to filter out results -->
+        <div class="search_list">
+          <input
+            type="text"
+            class="search_input"
+            id="search_input"
+            placeholder="Start typing to filter results"
+          />
+        </div>
+      </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="/js/todo.js"></script>
-
-</body>
+  </body>
 </html>
